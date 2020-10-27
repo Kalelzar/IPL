@@ -1,0 +1,161 @@
+body {
+    background-color: #232124;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.Whitespace {
+    white-space: pre;
+}
+
+
+li {
+    color: #383539;
+    font-size: 14px;
+}
+
+ul > li {
+    color: white;
+    display: inline-flex;
+    margin-right: 1px;
+    padding: 2px;
+    background-color: #383639;
+    border-width: 2px;
+    border-style: ridge;
+    border-color: #3F3A3D;
+}
+
+ul > li:hover {
+    border-style: outset;
+    background-color: #484649;
+    border-color: #4F4A4D;
+}
+
+ul > li.file {
+    color: black;
+    border-style: inset;
+    background-color: #8F1138;
+    border-color: #8F0118;
+}
+
+ul > li.file:hover {
+    border-style: outset;
+background-color: #9F1138;
+    border-color: #9F0118;
+}
+
+
+.filepath > ul {
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.filepath {
+    border-bottom-style: solid;
+    border-color: #131114;
+}
+
+ul {
+    list-style-type: none ;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+
+
+div[line] {
+    font-size: 0;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.code {
+    padding-top: 8px;
+    padding-bottom: 24px;
+    background-color: #2D2A2E;
+}
+
+span {
+    font-size: 14px;
+    color: #FCFCFA;
+    margin: 0;
+    padding: 0;
+}
+
+.key, .property {
+    color: #78DCE8;
+}
+
+.funcall {
+    color: #FF6188;
+}
+
+.Symbol, .Quote, .SharpQuote, .Character{
+    color: #FCFCFA;
+}
+
+.SharpColon, .Semicolon {
+    color: #666666;
+}
+
+.String {
+    color: #FFD866;
+}
+
+.error{
+    color: #FFF;
+    background: #551111;
+}
+
+
+.hidden-error{
+    display:none;
+}
+
+.error:hover + .hidden-error {
+    display: inline;
+    color: #FFF;
+    background: #551111;
+}
+
+.parenthesis[depth="error"]{
+    color: #FFF;
+    background: #551111;
+}
+
+.parenthesis[depth="0"]{
+    color: #BB6666;
+}
+
+.parenthesis[depth="1"]{
+    color: #FCA867;
+}
+
+.parenthesis[depth="2"]{
+    color: #A9DC76;
+}
+
+.parenthesis[depth="3"]{
+    color: #FFD866;
+}
+
+
+.parenthesis[depth="4"]{
+    color: #78DCE8;
+}
+
+.parenthesis[depth="5"]{
+    color: #FF6188;
+}
+
+.parenthesis[depth="6"]{
+    color: #AB9DF2;
+}
+
+.Integral, .Floating {
+    color: #AB9DF2
+}
